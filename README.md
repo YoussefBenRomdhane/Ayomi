@@ -1,3 +1,4 @@
+# Ayomi project
 Ce projet a été réalisé avec Django 1.8, Python 2.7 et Bootstrap 3.
 
 ## Features (Packages installés)
@@ -26,13 +27,17 @@ J'ai utilisé une base de données locale sqlite.
 * ``profil.html``
 
 ## Comment installer les dépendances et exécuter ?
-## Guide
-1- Ouvrir le projet avec l'IDE PyCharm 
-2- Cliquer File | Settings 
+
+1- Ouvrir le projet avec l'IDE PyCharm.
+
+2- Cliquer `File | Settings`.
+
 3- Dans le dialogue Project Interpreter, séléctionner le fichier python.exe sous le dossier Scripts sous l'emplacement de votre virtual environnement.
-4- Cliquer sur OK.
-5- Lancer la commande ``python manage.py runserver`` pour lancer le projet.
+
+4- Cliquer sur `OK`.
+
+5- Lancer la commande `python manage.py runserver` pour lancer le projet.
 
 ## NB
-Pour se connecter, taper ``youssef`` dans le champ username et ``azerty0000`` dans le champ password.
+Pour se connecter, taper `youssef` dans le champ username et `azerty0000` dans le champ password.
 
