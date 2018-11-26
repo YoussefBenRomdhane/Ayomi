@@ -1,0 +1,57 @@
+{% extends "base.html" %}
+{% load staticfiles%}
+{% block header %}
+         {% include "header.html" %}
+{% endblock header %}
+{% block content %}
+
+    <div class="team-member" style="background-color: lightgrey;padding-top: 3%;padding-bottom: 3%;">
+        <div>
+          <img class="mx-auto rounded-circle" src="{% static 'img/me.JPG' %}" alt="">
+          <h4>{{ user.first_name }}  {{ user.last_name }}</h4>
+          <p class="text-muted">{{ user.email }}</p>
+
+            <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">
+              Modifier ses informations
+            </button>
+            <!-- Modal -->
+          <div class="portfolio-modal modal fade" id="myModal" tabindex="-1" role="dialog" aria-hidden="true">
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="container">
+                    <div class="row">
+                      <div class="col-lg-6">
+                        <div class="modal-body">
+                          <!-- Project Details Go Here -->
+                          <h2 class="text-uppercase">Modifier mon profil</h2>
+
+                            <form  action="{% url 'submit_edition_user' user.id %}" method="post" style="margin-right:-50%;">
+                                  {% csrf_token %}
+                                  <div class="col-md-8">
+                                      <div class="form-group">
+                                        <input class="form-control"  name="email" type="text" value="{{ user.email }}" required="required" >
+                                      </div>
+                                      <div class="form-group">
+                                          <button class="btn btn-primary" type="submit" type="button">
+                                            <i class="fas fa-save"></i>
+                                            Enregistrer</button>
+                                        <button class="btn btn-primary" data-dismiss="modal" type="button">
+                                        <i class="fas fa-times"></i>
+                                        Quitter</button>
+                                      </div>
+                                  </div>
+                            </form>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}
+
+{% block footer %}
+    {% include "footer.html" %}
+{% endblock %}
