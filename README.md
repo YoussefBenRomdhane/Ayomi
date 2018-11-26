@@ -5,12 +5,12 @@ Ce projet a été réalisé avec Django 1.8, Python 2.7 et Bootstrap 3.
 * Django     1.8
 * pip        18.1
 * Bootstrap 3.3.7
-* virtualenv (taper "pip install virtualenv" pour l'installer)
+* virtualenv (taper `pip install virtualenv` pour l'installer)
 
 ## Configuration du Virtualenv
  * Créer: virtualenv <NOM_DE_VOTRE_ENV_V> 
- * Activer: Sous Linux: source bin/activate 
-            Sous Windows: Scripts\Activate
+ * Activer: Sous Linux: `source bin/activate` 
+            Sous Windows: `Scripts\Activate`
 
 ## Database 
 J'ai utilisé une base de données locale sqlite.
@@ -32,7 +32,7 @@ J'ai utilisé une base de données locale sqlite.
 
 2- Cliquer `File | Settings`.
 
-3- Dans le dialogue Project Interpreter, séléctionner le fichier python.exe sous le dossier Scripts sous l'emplacement de votre virtual environnement.
+3- Dans le dialogue `Project Interpreter`, séléctionner le fichier `python.exe` sous le dossier `Scripts` sous l'emplacement de votre virtual environnement.
 
 4- Cliquer sur `OK`.
 
